@@ -20,9 +20,15 @@ const numberOfCategories = document.querySelector("#categories")
 numberOfCategories.children;
 console.log(numberOfCategories.children[0]);
 
-const li = document.querySelectorAll(".item>ul");
+const li = document.querySelectorAll(".item");
+console.log(li)
+
+const liInfo = li.map(el => console.log(el))
+
+
 
 const info = value => {
     numberOfCategories.children.length;
+
 
 }
