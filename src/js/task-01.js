@@ -1,34 +1,18 @@
-// I show number of categories from task-01
-// const numberOfCategories = document.querySelectorAll(".item")
-// console.log(`Number of categories: ${numberOfCategories.length}`)
-// // It`s title products
-// const titleOfItem = document.querySelectorAll("h2")
-// // It`s "ul" tag
-// const elementsOfCategories = document.querySelectorAll(".item > ul");
-// // It`s function search element from arrElement
-// const searchElement = (title, el, index) => {
-//     console.log(`Category: ${title[index].textContent}
-//     Elements: ${el[index].children.length}`)
-// }
-// searchElement(titleOfItem, elementsOfCategories, 0)
-// searchElement(titleOfItem, elementsOfCategories, 1)
-// searchElement(titleOfItem, elementsOfCategories, 2)
+// create link on the #categories id
+const numberOfCategoriesList = document.querySelector("#categories");
+// create a function
+function searchInfoTagElement(tag) {
+    // show number of child
+    console.log(`Number of categories: ${tag.children.length}`);
+    // create link on the tag ---> child 
+    const arrtag = tag.children;
 
-// ! new function
-
-const numberOfCategories = document.querySelector("#categories")
-numberOfCategories.children;
-console.log(numberOfCategories.children[0]);
-
-const li = document.querySelectorAll(".item");
-console.log(li)
-
-const liInfo = li.map(el => console.log(el))
-
-
-
-const info = value => {
-    numberOfCategories.children.length;
-
-
+    for (let arr of arrtag) {
+        // it`s <h2> tag
+        console.log(`Category: ${arr.firstElementChild.textContent}`);
+        //  It`s number list of class = "item" 
+        console.log(`Elements: ${arr.lastElementChild.children.length}`);
+    }
 }
+
+searchInfoTagElement(numberOfCategoriesList);
