@@ -15,29 +15,9 @@ const images = [
 
 const galleryEl = document.querySelector(".gallery");
 
-
-// ! Variant #1
-
 const addElementInString = images
   .map(img => `<li><img class="gallery-img" src=${img.url} alt=${img.alt}></li>`)
   .join("");
 
 galleryEl.insertAdjacentHTML("afterbegin", addElementInString)
 
-
-// ! Variant #2
-// const addElement = element => {
-//   return images.map(img => {
-//   const newLiTag = document.createElement("li");
-//   const newImgTag = document.createElement("img")
-//   newImgTag.classList.add("gallery-img")
-//   newImgTag.src = img.url;
-//   newImgTag.alt = img.alt;
-//   newLiTag.append(newImgTag);
-//   element.append(newLiTag);
-
-//   return addElement
-// })
-// }
-
-// addElement(galleryEl)
