@@ -7,14 +7,14 @@ const counterEl = document.querySelector("#value");
 //  it`s counter
 let counter = 0;
 // function - 1 --> counter
-const onBtnSubtraction = () => {
+const handleButtonDecrementClick = () => {
     counter -= 1;
     counterEl.textContent = counter
     console.log("лог по -")
     console.log(counter)
 };
 // function + 1 --> counter
-const onBtAnaddition = () => {
+const handleButtonIncrementClick = () => {
     counter += 1;
     counterEl.textContent = counter
     console.log("лог по +")
@@ -22,6 +22,6 @@ const onBtAnaddition = () => {
 }; 
 
 // Event DecrementEl btn 
-btnDecrementEl.addEventListener("click", onBtnSubtraction);
+btnDecrementEl.addEventListener("click", handleButtonDecrementClick);
 // Event Increment btn
-btnIncrementEl.addEventListener("click", onBtAnaddition);
+btnIncrementEl.addEventListener("click", handleButtonIncrementClick);
