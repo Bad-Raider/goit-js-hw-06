@@ -1,8 +1,8 @@
-// it`s link to at input element
+// it`s link to the input element
 const inputEL = document.querySelector("#name-input");
-// it`s link to at span element
+// it`s link to the span element
 const spanEl = document.querySelector("#name-output");
-// it`s callback Placeholder fubctions
+// it`s hendler
 const handleSpanMakePlaceholderInput = (event) => {  
     spanEl.textContent = event.currentTarget.value;
     if (event.currentTarget.value === "") {
