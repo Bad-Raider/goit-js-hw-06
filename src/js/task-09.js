@@ -4,7 +4,7 @@ const getRandomHexColor = () => {
     .toString(16)
     .padStart(6, 0)}`;
 }
-// It`s DOM eLements 
+// It`s DOM elements 
 const ref = {
   body: document.querySelector("body"),
   span: document.querySelector(".color"),
