@@ -12,8 +12,9 @@ const ref = {
 }
 // it`s hendler
 const handleChangeBodyColor = (event) => {
-  ref.body.style.backgroundColor = getRandomHexColor(event);
-  ref.span.textContent = getRandomHexColor(event);
+  const color = getRandomHexColor();
+  ref.body.style.backgroundColor = color;
+  ref.span.textContent = color;
 };
 
 ref.btn.addEventListener("click", handleChangeBodyColor);
